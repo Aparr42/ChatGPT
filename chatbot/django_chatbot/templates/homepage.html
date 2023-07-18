@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="homescreen">
+      <h1>Wecome to AI chatbot</h1>
+      <div class="buttons">
+        <a href="{% url 'login' %}"><button type="button" name="button" class="btn">Login</button></a>
+        <a href="{% url 'register' %}"><button type="button" name="button" class="btn">Register</button></a>
+      </div>
+      <p>3 Step introduction on how this works!</p>
+      <ol>
+        <li>Login/or Sign Up.          <small>User Authentication</small></li>
+        <li>Chat With AI chatbot          <small>ChatGPT integration.</small> </li>
+        <li>Logout. You can still access your chat when you will log back again with the same credentials.         <small>Chat backup functionality</small></li>
+      </ol>
+
+    </div>
+  </body>
+</html>
+<style>
+  body{
+    background-color: #ece7e1;
+    font-family:math;
+  }
+  .homescreen {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: 1.5rem;
+    width:60%;
+  }
+  .homescreen h1{
+    text-align: center;
+  }
+  h1{
+    margin-bottom: 2rem;
+    color: #444;
+    font-weight:200;
+    margin-top: 10rem;
+  }
+
+  small{
+    opacity: .3;
+  }
+  li{
+    font-size: 1.2rem;
+    line-height:2rem;
+  }
+  .buttons{
+    margin-bottom: 7rem;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .btn{
+    width:300px;
+    height:50px;
+    background-color: #935555;
+    color:  white;
+    font-size: 18px;
+    border: none;
+    margin-top: 1rem;
+    transition: .3s ease-in-out;
+    border-radius:6px;
+  }
+  .btn:hover{
+    background-color: #ece7e1;
+    color:  #935555;
+    border: 1px solid #444;
+    cursor:pointer;
+  }
+</style>

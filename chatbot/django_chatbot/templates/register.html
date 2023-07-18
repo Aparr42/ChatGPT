@@ -5,8 +5,9 @@
 {% block styles %}
 <style>
   body {
-    background-color: #f0f0f0;
+    background-color: #ece7e1;
   }
+
   .register-container {
     display: flex;
     justify-content: center;
@@ -17,7 +18,7 @@
     max-width: 400px;
   }
   .card-header {
-    background-color: #007bff;
+    background-color: #935555;
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -44,7 +45,7 @@
     margin-bottom: 10px;
   }
   button[type=submit] {
-    background-color: #007bff;
+    background-color: #935555;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -53,9 +54,12 @@
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    transition .3s ease-in-out;
   }
   button[type=submit]:hover {
-    background-color: #0062cc;
+    background-color: #ece7e1;
+    color: #444;
+    boder: 1px solid #444;
   }
   .alert-danger {
     background-color: #f8d7da;
